@@ -12,7 +12,7 @@ import Button from '@material-ui/core/Button';
 import PetsCard from './PetCard';
 import PetForm from '../../PetForm/PetForm';
 
-import "./PetsOnHoliday.scss"
+ import "./PetsOnHoliday.scss"
 
 const PetsOnHoliday = () => {
   let {Pets} = useStore();
@@ -29,20 +29,20 @@ const PetsOnHoliday = () => {
   };
   return (
     <div className='pets-page'>
-      {!loadList ? 
+      {!loadList ?
       <React.Fragment>
         <div className='pet-wrapper container'>
         {Pets.list.map((el, index) => <PetsCard  {...el} key={index} />)}
         </div>
         <div className="button-block">
-          <Button 
-            variant="contained" 
+          <Button
+            variant="contained"
             color="primary"
             onClick={handleOpen}
             className="buttonAdd"
           >
             Add
-          </Button> 
+          </Button>
         </div>
         <Modal
           open={open}
@@ -56,7 +56,7 @@ const PetsOnHoliday = () => {
         />
         </Modal>
       </React.Fragment> : <div style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center'}}><CircularProgress size='200px' thickness='2'/></div>
-      } 
+      }
     </div>
   )
 };

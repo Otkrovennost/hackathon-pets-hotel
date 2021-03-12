@@ -80,3 +80,68 @@ export const dataPets=[
         pet:'cat',
     },
 ]
+
+
+
+export const dataSiters = [
+    {
+        name: 'Artur',
+        raitingPos: '10',
+        raitingNeg: '0',
+        reviews: 'reviews(2)',
+        offer: "I'll take a dog or a cat",
+        adress: 'Sovetskay str.',
+        phone: '+123456789',
+        pict:'./components/no_avatar (1).png'
+    },
+    {
+        name: 'Lera',
+        raitingPos: '2',
+        raitingNeg: '0',
+        reviews: 'reviews(2)',
+        offer: "I'll take a bird",
+        adress: 'Sovetskay str.',
+        phone: '+123456789',
+        pict:'./components/no_avatar (1).png'
+    },
+    {
+        name: 'Olga',
+        raitingPos: '0',
+        raitingNeg: '1',
+        reviews: 'reviews(2)',
+        offer: "I will accept any pet",
+        adress: 'Sovetskay str.',
+        phone: '+123456789',
+        pict:'./components/no_avatar (1).png'
+    },
+    {
+        name: 'Irina',
+        raitingPos: '10',
+        raitingNeg: '0',
+        reviews: 'reviews(2)',
+        offer: "I'll take a dog or a cat",
+        adress: 'Sovetskay str.',
+        phone: '+123456789',
+        pict:'./components/no_avatar (1).png'
+    },
+    {
+        name: 'Natalia',
+        raitingPos: '12',
+        raitingNeg: '0',
+        reviews: 'reviews(2)',
+        offer: "I'll take a dog or a cat",
+        adress: 'Sovetskay str.',
+        phone: '+123456789',
+        pict:'./components/no_avatar (1).png'
+    },
+    {
+        name: 'Vadim',
+        raitingPos: '3',
+        raitingNeg: '0',
+        reviews: 'reviews(3)',
+        offer: "I'll take a dog or a cat",
+        adress: 'Sovetskay str.',
+        phone: '+123456789',
+        pict:'./components/no_avatar (1).png'
+    },
+]
