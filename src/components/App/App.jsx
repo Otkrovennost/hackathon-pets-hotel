@@ -12,6 +12,8 @@ import './App.scss';
 function App() {
   return (
     <HashRouter>
+
+
       <Switch>
         <Route exact path={AppRoute.MAIN_PAGE} component={MainPage} />
         <Route
