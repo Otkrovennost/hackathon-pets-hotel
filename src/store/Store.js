@@ -1,0 +1,39 @@
+import React from "react";
+import globalHook from "use-global-hook";
+
+let initialState = {
+  Pets: {
+    list: []
+  },
+};
+
+export const cleanupPersistedStore = () => {
+  localStorage.removeItem('pets_store')
+}
+
+const actions = Object.keys(initialState).reduce((acc, key)=>{
+    acc['update'+key] = (store, data) => {
+        if (!data)
+          throw new Error('Setting store section to falsy value');
+        if (data._cleanup) {
+          console.log('CLEANUP?', data)
+          store.setState({[key]: {...initialState[key]}}, ()=>{
+            cleanupPersistedStore()
+          });
+          return;
+        }
+        store.setState({[key]: {...store.state[key], ...data}}, ()=>{
+          localStorage.setItem('pets_store', JSON.stringify(store))
+        });
+    }
+    return acc
+}, {});
+
+
+const useGlobal = globalHook(React, initialState, actions);
+const useGlobalState = () => {
+    let [state, actions] = useGlobal()
+    return { ...state, ...actions };
+}
+
+export default useGlobalState;
