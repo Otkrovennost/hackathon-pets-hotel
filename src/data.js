@@ -1,4 +1,4 @@
-const dataPets=[
+export const dataPets=[
     {
         name:'Sima',
         img:'https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
@@ -80,4 +80,3 @@ const dataPets=[
         pet:'cat',
     },
 ]
-export default dataPets

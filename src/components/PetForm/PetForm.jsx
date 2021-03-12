@@ -61,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-const PetForm = ({handleChange}) => {
+const PetForm = ({handleChange, setLoadList}) => {
   const classes = useStyles();
   let {Pets, updatePets} = useStore();
 
@@ -132,8 +132,12 @@ const PetForm = ({handleChange}) => {
 
   let getList = () => new Promise(resolve => {
     handleChange();
+    setLoadList(true);
     setList(Pets.list);
-    setTimeout(()=>{resolve(Pets.list)}, 1500);
+    setTimeout(()=>{
+      resolve(Pets.list);
+      setLoadList(false);
+    }, 1000);
   });
 
   useEffect(() => {checkFieldsValid()},[pet]);

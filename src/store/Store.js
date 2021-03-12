@@ -1,9 +1,11 @@
 import React from "react";
 import globalHook from "use-global-hook";
 
+import {dataPets} from '../data'
+
 let initialState = {
   Pets: {
-    list: []
+    list: dataPets
   },
 };
 
