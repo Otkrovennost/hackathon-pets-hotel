@@ -5,7 +5,7 @@ import "./PetSitters.scss"
 
 const PetSitters = () => {
   return (
-    <div className= 'pet-wrapper'>
+    <div className= 'pet-wrapper container'>
 {dataSiters.map((el, index)=> <CardSiters key={index} {...el}/>)}
     </div>
 )

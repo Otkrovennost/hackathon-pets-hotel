@@ -24,6 +24,8 @@
 // }
 .comment {
     font-style: italic;
+    font-weight: 100;
+    color: rgb(32, 28, 28);
 }
 .sitters {
     width: 250px;
@@ -66,7 +68,8 @@ margin-bottom: 10px;
 
 
         h2 {
-            margin-left: 10px;
+            margin-top: 10px;
+            margin-left: 20px;
         }
     }
 }

@@ -1,15 +1,9 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-background-color:#EFC4C0 ;
-}
+
 .pet-wrapper{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color:#EFC4C0
+
 }
 .petcard{
     width: 250px;
