@@ -1,9 +1,34 @@
+<<<<<<< HEAD
+=======
+.pets-page {
+  padding: 35px 0;
+  background-color:#EFC4C0;
+}
+
+.button-block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+
+  .buttonAdd {
+    width: 250px;
+    font-size: 20px;
+    // color: #fff;
+    // background-color: #7021bf;
+  }
+  
+}
+>>>>>>> bd253204bef063758da58c48f118dd35da7d0aa7
 
 .pet-wrapper{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+<<<<<<< HEAD
 
+=======
+>>>>>>> bd253204bef063758da58c48f118dd35da7d0aa7
 }
 .petcard{
     width: 250px;

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 export  const dataPets=[
+=======
+export const dataPets=[
+>>>>>>> bd253204bef063758da58c48f118dd35da7d0aa7
     {
         name:'Sima',
         img:'https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
@@ -79,6 +83,7 @@ export  const dataPets=[
         phone:'+123456789',
         pet:'cat',
     },
+<<<<<<< HEAD
 ]
 
 
@@ -145,3 +150,6 @@ export const dataSiters = [
         pict:'./components/no_avatar (1).png'
     },
 ]
+=======
+]
+>>>>>>> bd253204bef063758da58c48f118dd35da7d0aa7
