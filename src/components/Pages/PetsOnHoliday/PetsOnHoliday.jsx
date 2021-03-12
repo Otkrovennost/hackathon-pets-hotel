@@ -1,8 +1,8 @@
 import React from 'react'
 import PetsCard from './PetCard';
-import dataPets from '../../../data'
+import {dataPets} from '../../../data'
 
-import "./PetsOnHoliday.scss"
+ import "./PetsOnHoliday.scss"
 
 const PetsOnHoliday = (props) => {
   return (

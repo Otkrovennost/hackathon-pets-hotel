@@ -33,63 +33,63 @@ img{
 text-align: left;
 margin-left: 20px;
 }
-.comment{
-    font-style: italic;
-}
-.sitters{
-    width: 250px;
-    height: 300px;
-      border-radius: 4px;
-    background-color: #fff;
-    margin: 10px;
-    padding: 10px;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-overflow: hidden;
-   img{
-    width:  50px;
-    height:  50px;
-    object-fit: cover;
-    border-radius: 4px;
-    margin: 5px;
-   }
-   .petInfo{
-     >p{
-       margin: 5px;
-   }
-   }
-button{
-    font-size: 10px;
-    padding: 2px 4px;
-}
-.commentsCount{
-    color: rgb(53, 53, 241);
-    margin-left: 60px;
-    font-size: 12px;
-}
-.avatar-siters-container{
-    display: flex;
-margin: 10px;
-padding-left: 10px;
-h2{
-    margin-left: 10px;
-}
-}
-}
-.commentOut{
-  height: 90px;
-  overflow-y: auto;
-  overflow-x: hidden;
+// .comment{
+//     font-style: italic;
+// }
+// .sitters{
+//     width: 250px;
+//     height: 300px;
+//       border-radius: 4px;
+//     background-color: #fff;
+//     margin: 10px;
+//     padding: 10px;
+//    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+// overflow: hidden;
+//    img{
+//     width:  50px;
+//     height:  50px;
+//     object-fit: cover;
+//     border-radius: 4px;
+//     margin: 5px;
+//    }
+//    .petInfo{
+//      >p{
+//        margin: 5px;
+//    }
+//    }
+// button{
+//     font-size: 10px;
+//     padding: 2px 4px;
+// }
+// .commentsCount{
+//     color: rgb(53, 53, 241);
+//     margin-left: 60px;
+//     font-size: 12px;
+// }
+// .avatar-siters-container{
+//     display: flex;
+// margin: 10px;
+// padding-left: 10px;
+// h2{
+//     margin-left: 10px;
+// }
+// }
+// }
+// .commentOut{
+//   height: 90px;
+//   overflow-y: auto;
+//   overflow-x: hidden;
 
-    &-p{
-        border-radius: 1px solid grey;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
-    padding: 5px 3px;
-    font-style: italic;
-    text-align: left;
-    word-wrap: break-word;
-    font-size: 14px;
-    }
-}
-.input{
+//     &-p{
+//         border-radius: 1px solid grey;
+//     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+//     padding: 5px 3px;
+//     font-style: italic;
+//     text-align: left;
+//     word-wrap: break-word;
+//     font-size: 14px;
+//     }
+// }
+// .input{
 
-}
+// }

@@ -1,13 +1,14 @@
 import React from 'react'
-
+import CardSiters from './CardSiters';
+import {dataSiters} from '../../../data'
 import "./PetSitters.scss"
 
 const PetSitters = () => {
   return (
-    <div>
-     PetSitters
+    <div className= 'pet-wrapper'>
+{dataSiters.map((el, index)=> <CardSiters key={index} {...el}/>)}
     </div>
-  )
+)
 }
 
 export default PetSitters;
