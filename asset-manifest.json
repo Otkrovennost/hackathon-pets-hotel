@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/hackathon-pets-hotel/static/css/main.bd15f979.chunk.css",
-    "main.js": "/hackathon-pets-hotel/static/js/main.c681f52a.chunk.js",
-    "main.js.map": "/hackathon-pets-hotel/static/js/main.c681f52a.chunk.js.map",
+    "main.css": "/hackathon-pets-hotel/static/css/main.3edfb250.chunk.css",
+    "main.js": "/hackathon-pets-hotel/static/js/main.bad11b17.chunk.js",
+    "main.js.map": "/hackathon-pets-hotel/static/js/main.bad11b17.chunk.js.map",
     "runtime-main.js": "/hackathon-pets-hotel/static/js/runtime-main.6ccbf6d5.js",
     "runtime-main.js.map": "/hackathon-pets-hotel/static/js/runtime-main.6ccbf6d5.js.map",
-    "static/js/2.714453b6.chunk.js": "/hackathon-pets-hotel/static/js/2.714453b6.chunk.js",
-    "static/js/2.714453b6.chunk.js.map": "/hackathon-pets-hotel/static/js/2.714453b6.chunk.js.map",
+    "static/js/2.6b544484.chunk.js": "/hackathon-pets-hotel/static/js/2.6b544484.chunk.js",
+    "static/js/2.6b544484.chunk.js.map": "/hackathon-pets-hotel/static/js/2.6b544484.chunk.js.map",
     "index.html": "/hackathon-pets-hotel/index.html",
-    "static/css/main.bd15f979.chunk.css.map": "/hackathon-pets-hotel/static/css/main.bd15f979.chunk.css.map",
-    "static/js/2.714453b6.chunk.js.LICENSE.txt": "/hackathon-pets-hotel/static/js/2.714453b6.chunk.js.LICENSE.txt",
+    "static/css/main.3edfb250.chunk.css.map": "/hackathon-pets-hotel/static/css/main.3edfb250.chunk.css.map",
+    "static/js/2.6b544484.chunk.js.LICENSE.txt": "/hackathon-pets-hotel/static/js/2.6b544484.chunk.js.LICENSE.txt",
+    "static/media/Logo.fb6336bc.svg": "/hackathon-pets-hotel/static/media/Logo.fb6336bc.svg",
+    "static/media/AboutSection.scss": "/hackathon-pets-hotel/static/media/bg_bottom.b36ddb9b.png",
+    "static/media/dog.9598077b.png": "/hackathon-pets-hotel/static/media/dog.9598077b.png",
     "static/media/image.fbc4c711.png": "/hackathon-pets-hotel/static/media/image.fbc4c711.png",
     "static/media/no_avatar (1).f29f0889.png": "/hackathon-pets-hotel/static/media/no_avatar (1).f29f0889.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6ccbf6d5.js",
-    "static/js/2.714453b6.chunk.js",
-    "static/css/main.bd15f979.chunk.css",
-    "static/js/main.c681f52a.chunk.js"
+    "static/js/2.6b544484.chunk.js",
+    "static/css/main.3edfb250.chunk.css",
+    "static/js/main.bad11b17.chunk.js"
   ]
 }
