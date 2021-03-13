@@ -8,6 +8,7 @@ import Modal from '@material-ui/core/Modal';
 
 import useStore from '../../../store/Store.js';
 
+import Navbar from '../../Navbar/navbar'
 import Button from '@material-ui/core/Button';
 import CardSiters from './CardSiters';
 import Footer from '../../Footer/Footer';
@@ -36,6 +37,9 @@ const PetSitters = () => {
     <React.Fragment>
        {!loadList ?
        <React.Fragment>
+         <Navbar
+          isActiveLinkSitters={true}
+         />
           <div className="button-block">
           <Button
             variant="contained"
