@@ -29,15 +29,23 @@ const useStyles = makeStyles((theme) => ({
     left: '50%', 
     transform: 'translate(-50%, -50%)',
     [theme.breakpoints.down("md")]: {
-      width: '80%',
+      width: '90%',
     },
   },
   textFieldName: {
     width: '100%',
     marginLeft: 0,
     [theme.breakpoints.up("sm")]: {
-      width: '60%', 
-      marginLeft: 'auto',
+      width: '35%', 
+      marginLeft: '3%',
+    },
+  },
+  textFieldKind: {
+    width: '100%',
+    marginLeft: 0,
+    [theme.breakpoints.up("sm")]: {
+      width: '35%', 
+      marginLeft: '3%',
     },
   },
   textFieldDate: {
@@ -80,7 +88,8 @@ const PetForm = ({handleChange, setLoadList}) => {
     dayEnd: '2021-03-15',
     comment: '',
     contact: '',
-    phone: ''
+    phone: '',
+    pet: ''
   }
   const [pet, setPet] = useState(petInit);
 
@@ -92,9 +101,11 @@ const PetForm = ({handleChange, setLoadList}) => {
     comment: pet.comment !== '' ? true : false,
     contact: pet.contact !== '' ? true : false,
     phone: pet.phone !== '' ? true : false,
+    pet: pet.pet !== '' ? true : false,
   });
 
   const isNonEmpty = (n) => !validator.isEmpty(n);
+  const validatePhone = (p) => validator.isMobilePhone(p, "ru-RU");
 
   const validate = {
     name: isNonEmpty,
@@ -102,7 +113,8 @@ const PetForm = ({handleChange, setLoadList}) => {
     dayEnd:isNonEmpty,
     contact: isNonEmpty,
     comment: isNonEmpty,
-    phone: isNonEmpty,
+    phone:  validatePhone,
+    pet: isNonEmpty,
   };
 
   const updateField = (key) => (input) => {
@@ -124,7 +136,8 @@ const PetForm = ({handleChange, setLoadList}) => {
           dayEnd: pet.dayEnd,
           comment: pet.comment,
           contact: pet.contact,
-          phone: pet.phone
+          phone: pet.phone,
+          pet: pet.pet
         }]
       })
     },1500);
@@ -166,6 +179,15 @@ const PetForm = ({handleChange, setLoadList}) => {
               error={!fieldsValid.name}
               helperText={fieldsValid.name ? '' : 'Please,add your pet name'}
               onChange={updateField("name")}
+              />
+              <TextField 
+              id="pet-kind"
+              label="Kind of animal"
+              value={pet.pet}
+              className={classes.textFieldKind}
+              error={!fieldsValid.pet}
+              helperText={fieldsValid.pet ? '' : 'Please,add kind of pet'}
+              onChange={updateField("pet")}
               />
           </Grid>
           <Grid container style={{display: 'flex', marginBottom: '15px'}}>
@@ -233,6 +255,7 @@ const PetForm = ({handleChange, setLoadList}) => {
               <TextField 
                 id="pet-contact-phone"
                 label="Owner phone"
+                placeholder="89876543210"
                 value={pet.phone}
                 style={{width: '100%'}}
                 error={!fieldsValid.phone}

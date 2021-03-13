@@ -1,4 +1,11 @@
 .pets-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color:#EFC4C0;
+}
+
+.pets-main {
   padding: 35px 0;
   background-color:#EFC4C0;
 }
@@ -7,13 +14,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 30px;
+  margin: 30px 0;
 
   .buttonAdd {
     width: 250px;
     font-size: 20px;
-    // color: #fff;
-    // background-color: #7021bf;
   }
 
 }
