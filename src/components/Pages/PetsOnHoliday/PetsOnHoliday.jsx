@@ -97,7 +97,9 @@ const PetsOnHoliday = () => {
 
   return (
     <div className='pets-page'>
-      <Navbar />
+      <Navbar 
+        isActiveLinkPets={true}
+      />
       <div className='pets-main'>
         <div className='container'>
           {!loadList ?

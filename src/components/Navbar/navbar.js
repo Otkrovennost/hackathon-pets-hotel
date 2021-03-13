@@ -4,21 +4,17 @@ import { Link } from 'react-router-dom';
 import Logo from '../../assets/Logo.svg'
 import './navbar.scss'
 
-const Navbar = () => {
+const Navbar = ({isActiveLinkPets=false, isActiveLinkSitters=false}) => {
     return (
-
-        <div className='wrapper-navbar container'>
-
-            <Link to='/'><img src={Logo} alt='logo' /></Link>
+        <div className='navbar'>
+          <div className="wrapper-navbar container">
+            <Link to='/'><img className="navbar-img" src={Logo} alt='logo' /></Link>
             <ul>
-                <Link className='Link' to='/pets_on_holiday'><p>pets</p></Link>
-                <Link className='Link' to='/pet_sitters'><p>pet-sitter</p></Link>
+                <Link className={!isActiveLinkPets ? 'Link' : 'Link Link__active'} to='/pets_on_holiday'>Pets</Link>
+                <Link className={!isActiveLinkSitters ? 'Link' : 'Link Link__active'}  to='/pet_sitters'>Pet-sitters</Link>
 
             </ul>
-
-
-
-
+          </div>
         </div>
     )
 }
