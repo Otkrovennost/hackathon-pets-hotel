@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     top: '50%', 
     left: '50%', 
     transform: 'translate(-50%, -50%)',
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.down("sm")]: {
       width: '90%',
     },
   },
