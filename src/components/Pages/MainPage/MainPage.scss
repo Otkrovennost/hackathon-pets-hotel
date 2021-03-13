@@ -10,7 +10,11 @@
 .wrapper-content {
   display: flex;
 
-  @media(max-width: 900px) {
+  // @media(min-width: 501px) and (max-width: 900px) {
+  //   flex-direction: row;
+  // }
+
+  @media(max-width: 500px) {
     flex-wrap: wrap;
     flex-direction: column;
   }
@@ -39,6 +43,10 @@
   width: 100%;
   height: auto;
   margin-top:10px;
+
+  @media(min-width: 501px) and (max-width: 900px) {
+    width: 50%;
+  }
 }
 
 .section {
@@ -59,7 +67,11 @@
     line-height: 35px;
   }
 
-  @media(max-width: 900px) {
+  @media(min-width: 501px) and (max-width: 900px) {
+    width: 50%;
+  }
+
+  @media(max-width: 500px) {
     width: 100%;
     align-self: center;
   }
