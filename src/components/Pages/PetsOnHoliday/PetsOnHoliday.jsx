@@ -99,11 +99,11 @@ const PetsOnHoliday = () => {
     <div className='pets-page'>
     <React.Fragment>
 
-
+<div className='pets-main'>
       <Navbar
         isActiveLinkPets={true}
       />
-      <div className='pets-main'>
+<h2 className="h2-sitters">Find your Ideal Pet-Companion!</h2>
         <div className='container'>
           {!loadList ?
             <React.Fragment>
