@@ -1,8 +1,9 @@
 import React from 'react'
-import dog from './dog.png'
+import dog from './assets/dog.png'
 import './AboutSection.scss'
 export default function AboutSection() {
     return (
+        <div className='AboutSection'>
         <div className='container'>
 <div className='content-container'>
 <h2>Возьму животное</h2>
@@ -11,6 +12,8 @@ export default function AboutSection() {
 
 </div>
 <img src={dog} alt="dog"/>
+        </div>
+
         </div>
     )
 }
