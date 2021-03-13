@@ -8,18 +8,21 @@ export default function CardSiters({ name, raitingPos, raitingNeg, reviews, offe
 const [comment, setComment] = useState([])
 const [comCount, setComCount] = useState(0)
 
+
+
 useEffect(()=>{
+
 const raw=localStorage.getItem('comment') || []
 setComment(JSON.parse(raw));
-const  comCountLocal=localStorage.getItem('comCount')
+const  comCountLocal=localStorage.getItem('comCount') || 0
 setComCount(JSON.parse(comCountLocal))
 },[])
 
-useEffect(()=>{
-localStorage.setItem('comment', JSON.stringify(comment))
-localStorage.setItem('comCount', JSON.stringify(comCount ))
-},[comment])
 
+useEffect(()=>{
+    localStorage.setItem('comment', JSON.stringify(comment))
+    localStorage.setItem('comCount', JSON.stringify(comCount ))
+    },[comment])
 
 const  addComment=()=>{
 
