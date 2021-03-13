@@ -1,0 +1,25 @@
+.wrapper-navbar{
+display: flex;
+
+background-color: aliceblue;
+}
+
+.wrapper-navbar ul{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  
+}
+
+.Link{
+    margin-right: 100px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+color: #5797E2;
+}

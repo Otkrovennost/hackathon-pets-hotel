@@ -1,34 +1,30 @@
 .wrapper {
     width: auto;
-    height: auto;
+    height: 100vh;
     background:#E2576A;
   }
   
   
   .wrapper-content {
     display: flex;
-   
     margin:auto;
-    /* justify-content: space-between;   */
-     padding: 0;
-    
-      }
-  
-  .logo {
-    position: fixed;
-    left:0;
-    width: 100px;
-    height: 10px;
-    font-size: large;
-    font-weight:bold;
-    padding-top: 10px
+    padding: 0;
   }
   
-  .wrapper img{
+  // .logo {
+  //   display:flex;
+  //   margin-left: 25px;;
+  //   width: 100px;
+  //   height: 10px;
+  //   font-size: xx-large;
+  //   font-weight:bold;
+  //   font-family: 'Oregano';
+  //   padding-top: 15px
+  // }
+  
+  .wrapper-content img{
     overflow: hidden;
-    width: 50%;
-    height: 100%;
-    margin-top:10px;
+   
   }
   
   .section {
@@ -55,8 +51,7 @@
     display: flex;
     justify-content: space-between;
     padding-top: 60px;
-  
-    }
+  }
   
   .button-general button{
     background-color: rgba(245, 245, 245, 0.70);
