@@ -97,7 +97,7 @@ const PetsOnHoliday = () => {
 
   return (
     <div className='pets-page'>
-      <Navbar 
+      <Navbar
         isActiveLinkPets={true}
       />
       <div className='pets-main'>
@@ -178,7 +178,7 @@ const PetsOnHoliday = () => {
                             setIsSpecializationMenuVisible(prev => !prev);
                           }}
                         >
-                          Сбросить
+                         Reset
                       </Button>
                       </CardActions>
                     </CardContent>
