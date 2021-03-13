@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import "./MainPage.scss"
 import Pict from '../../../assets/image.png'
 import Logo from '../../../assets/Logo.png'
+import AboutSection from './AboutSection';
 
 const MainPage = () => {
 
@@ -17,7 +18,7 @@ const MainPage = () => {
         <div className='wrapper-content'>
           <div><img src={Pict} /></div>
 
-          
+
 
           <div className='section'>
 
@@ -32,7 +33,7 @@ const MainPage = () => {
       </div>
 
 
-
+      <AboutSection/>
     </div >
   )
 }
