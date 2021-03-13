@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-
 import useStore from '../../../store/Store.js';
 
 import { makeStyles } from "@material-ui/core/styles";
@@ -26,14 +25,6 @@ import Footer from '../../Footer/Footer'
 import PetsCard from './PetCard';
 import PetForm from '../../PetForm/PetForm';
 
-<<<<<<< HEAD
-import Navbar from '../../Navbar/navbar'
-
-import "./PetsOnHoliday.scss"
-
-const PetsOnHoliday = () => {
-  let { Pets } = useStore();
-=======
 import "./PetsOnHoliday.scss";
 
 const useStyles = makeStyles((theme) => ({
@@ -59,11 +50,11 @@ const PETS_LIST = [
 ];
 
 const getFilteredPets = (filtersList, arr) => {
-  if(filtersList.includes(ALL_PETS)) {
+  if (filtersList.includes(ALL_PETS)) {
     return arr.slice();
   }
   const filteredPets = arr.slice().filter((item) => (
-    filtersList.some(elem=> item.pet.includes(elem))
+    filtersList.some(elem => item.pet.includes(elem))
   ));
   return filteredPets;
 };
@@ -71,8 +62,7 @@ const getFilteredPets = (filtersList, arr) => {
 const PetsOnHoliday = () => {
   const classes = useStyles();
 
-  let {Pets} = useStore();
->>>>>>> 09d62c1c6f11889cfb2a128bc9688607de41363a
+  let { Pets } = useStore();
 
   const [open, setOpen] = useState(false);
   const [loadList, setLoadList] = useState(false);
@@ -103,158 +93,125 @@ const PetsOnHoliday = () => {
 
   return (
     <div className='pets-page'>
-<<<<<<< HEAD
-      {!loadList ?
-        <React.Fragment>
-          <Navbar />
-
-
-
-          <div className='pet-wrapper container'>
-            {Pets.list.map((el, index) => <PetsCard  {...el} key={index} />)}
-          </div>
-          <div className="button-block">
-            <Button
-              variant="contained"
-              color="primary"
-              onClick={handleOpen}
-              className="buttonAdd"
-            >
-              Add
-          </Button>
-          </div>
-=======
       <div className='pets-main'>
         <div className='container'>
-        {!loadList ?
-        <React.Fragment>
-          <div className="button-block">
-            <Button
-              variant="contained"
-              color="secondary"
-              onClick={handleOpen}
-              className="buttonAdd"
-            >
-              Put a card
+          {!loadList ?
+            <React.Fragment>
+              <div className="button-block">
+                <Button
+                  variant="contained"
+                  color="secondary"
+                  onClick={handleOpen}
+                  className="buttonAdd"
+                >
+                  Put a card
             </Button>
-          </div>
-            <ClickAwayListener onClickAway={handleClickAway}>
-              <Box
-                style={{position: 'relative'}}
-              >
-                <Chip 
-                  color="primary"
-                  size="medium"
-                  label={
-                    <Box component="span">
-                      Filter pets:
+              </div>
+              <ClickAwayListener onClickAway={handleClickAway}>
+                <Box
+                  style={{ position: 'relative' }}
+                >
+                  <Chip
+                    color="primary"
+                    size="medium"
+                    label={
+                      <Box component="span">
+                        Filter pets:
                       <span
-                        style={{marginLeft: '10px'}}
-                      >
-                        {[...specializationValue].join(', ')}
-                      </span>
-                    </Box>
-                  } 
-                  onClick={() => {
-                    setIsSpecializationMenuVisible(prev => !prev);
-                  }}
-                />
-                <Card className={isSpecializationMenuVisible ? classes.filterRadioMenu : classes.filterMenuHide} >
-                  <CardContent>
-                    <FormControl component="fieldset">
-                      {PETS_LIST.map((item) => (
-                        <FormControlLabel
-                          control={
-                            <Checkbox
-                              color="secondary" 
-                              checked={specializationValue.has(item)} 
-                              onChange={event => {
-                                setSpecializationValue(state => {
-                                  const newState = new Set(state);
-                                  console.log(state);
-                                  if (event.target.checked) {
-                                    newState.delete(ALL_PETS);
-                                    newState.add(item);
-                                  } else {
-                                    newState.delete(item);
+                          style={{ marginLeft: '10px' }}
+                        >
+                          {[...specializationValue].join(', ')}
+                        </span>
+                      </Box>
+                    }
+                    onClick={() => {
+                      setIsSpecializationMenuVisible(prev => !prev);
+                    }}
+                  />
+                  <Card className={isSpecializationMenuVisible ? classes.filterRadioMenu : classes.filterMenuHide} >
+                    <CardContent>
+                      <FormControl component="fieldset">
+                        {PETS_LIST.map((item) => (
+                          <FormControlLabel
+                            control={
+                              <Checkbox
+                                color="secondary"
+                                checked={specializationValue.has(item)}
+                                onChange={event => {
+                                  setSpecializationValue(state => {
+                                    const newState = new Set(state);
+                                    console.log(state);
+                                    if (event.target.checked) {
+                                      newState.delete(ALL_PETS);
+                                      newState.add(item);
+                                    } else {
+                                      newState.delete(item);
 
-                                    if(newState.size === 0) {
-                                      newState.add(ALL_PETS);
+                                      if (newState.size === 0) {
+                                        newState.add(ALL_PETS);
+                                      }
                                     }
-                                  }
-                                  return newState;
-                                })
-                              }}  
-                              name={item} 
-                            />
-                          }
-                        label={item}
-                      />
-                      ))}
-                    </FormControl>
-                    <CardActions>
-                      <Button
-                        size="small"
-                        color="primary"
-                        style={{fontWeight: 500, fontSize: '14px', lineHeight: '24px', color:'#2f80ed'}}
-                        onClick={() => {
-                          setSpecializationValue(new Set([ALL_PETS]));
-                          setIsSpecializationMenuVisible(prev => !prev);
-                        }}    
-                      >
-                        Сбросить
+                                    return newState;
+                                  })
+                                }}
+                                name={item}
+                              />
+                            }
+                            label={item}
+                          />
+                        ))}
+                      </FormControl>
+                      <CardActions>
+                        <Button
+                          size="small"
+                          color="primary"
+                          style={{ fontWeight: 500, fontSize: '14px', lineHeight: '24px', color: '#2f80ed' }}
+                          onClick={() => {
+                            setSpecializationValue(new Set([ALL_PETS]));
+                            setIsSpecializationMenuVisible(prev => !prev);
+                          }}
+                        >
+                          Сбросить
                       </Button>
-                    </CardActions>
-                  </CardContent>
-                </Card>
-              </Box>
-            </ClickAwayListener>
->>>>>>> 09d62c1c6f11889cfb2a128bc9688607de41363a
-          <Modal
-            open={open}
-            onClose={handleClose}
-            aria-labelledby="modal-title"
-            aria-describedby="modal-description"
-          >
-<<<<<<< HEAD
-            <PetForm
-              handleChange={handleClose}
-              setLoadList={setLoadList}
-            />
-          </Modal>
-        </React.Fragment> : <div style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><CircularProgress size='200px' thickness='2' /></div>
-      }
-    </div >
-=======
-          <PetForm
-            setLoadList={setLoadList}
-            handleClose={handleClose}
-          />
-          </Modal>
-          <div className='pet-wrapper'>
-          {getFilteredPets([...specializationValue], Pets.list).slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map((el, index) => <PetsCard  {...el} key={index} />)}
-          </div>
-            <TablePagination
-              rowsPerPageOptions={[4, 8, 16, 32]}
-              component="div"
-              count={Pets.list.length}
-              rowsPerPage={rowsPerPage}
-              page={page}
-              onChangePage={handleChangePage}
-              onChangeRowsPerPage={handleChangeRowsPerPage}
-              labelRowsPerPage={"Show:"}
-              labelDisplayedRows={
-                ({ from, to, count }) =>`Shown: ${from}-${to} from ${count !== -1 ? count : `more than ${to}`}`
-              }
-              style={{width: '50%', margin: '0 auto', display: 'flex', justifyContent: 'center'}}
-            />
-        </React.Fragment> : <div style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center'}}><CircularProgress size='200px' thickness='2'/></div>
-        }
+                      </CardActions>
+                    </CardContent>
+                  </Card>
+                </Box>
+              </ClickAwayListener>
+              <Modal
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="modal-title"
+                aria-describedby="modal-description"
+              >
+                <PetForm
+                  setLoadList={setLoadList}
+                  handleClose={handleClose}
+                />
+              </Modal>
+              <div className='pet-wrapper'>
+                {getFilteredPets([...specializationValue], Pets.list).slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map((el, index) => <PetsCard  {...el} key={index} />)}
+              </div>
+              <TablePagination
+                rowsPerPageOptions={[4, 8, 16, 32]}
+                component="div"
+                count={Pets.list.length}
+                rowsPerPage={rowsPerPage}
+                page={page}
+                onChangePage={handleChangePage}
+                onChangeRowsPerPage={handleChangeRowsPerPage}
+                labelRowsPerPage={"Show:"}
+                labelDisplayedRows={
+                  ({ from, to, count }) => `Shown: ${from}-${to} from ${count !== -1 ? count : `more than ${to}`}`
+                }
+                style={{ width: '50%', margin: '0 auto', display: 'flex', justifyContent: 'center' }}
+              />
+            </React.Fragment> : <div style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><CircularProgress size='200px' thickness='2' /></div>
+          }
+        </div>
       </div>
-      </div>
-      <Footer/>
+      <Footer />
     </div>
->>>>>>> 09d62c1c6f11889cfb2a128bc9688607de41363a
   )
 };
 
