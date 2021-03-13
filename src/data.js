@@ -145,34 +145,34 @@ export const dataPets=[
 
 export const dataSiters = [
     {
-        name: 'Artur',
+        name: ' Alexandr',
         raitingPos: '10',
         raitingNeg: '0',
         reviews: 'reviews(2)',
         offer: "I'll take a dog or a cat",
         adress: 'Sovetskay str.',
         phone: '123456789',
-        pict:null
+        pict:'https://ca.slack-edge.com/T6SG2QGG2-U01ETT5NKHU-3b588886a7d3-512'
     },
     {
-        name: 'Lera',
+        name: 'Natalia',
         raitingPos: '2',
         raitingNeg: '0',
         reviews: 'reviews(2)',
         offer: "I'll take a bird",
         adress: 'Sovetskay str.',
         phone: '123456789',
-        pict:null
+        pict: 'https://ca.slack-edge.com/T6SG2QGG2-U01BSL54PAP-15ce310c08fe-512'
     },
     {
-        name: 'Olga',
+        name: 'Nazar',
         raitingPos: '0',
         raitingNeg: '1',
         reviews: 'reviews(2)',
         offer: "I will accept any pet",
         adress: 'Sovetskay str.',
         phone: '123456789',
-        pict:null
+        pict: 'https://ca.slack-edge.com/T6SG2QGG2-U01BGT43FPZ-345adf19619e-512'
     },
     {
         name: 'Irina',
@@ -182,17 +182,17 @@ export const dataSiters = [
         offer: "I'll take a dog or a cat",
         adress: 'Sovetskay str.',
         phone: '123456789',
-        pict:null
+        pict:'https://ca.slack-edge.com/T6SG2QGG2-U01F6KBDZRD-590e9738fa3d-512'
     },
     {
-        name: 'Natalia',
+        name: 'Artur',
         raitingPos: '12',
         raitingNeg: '0',
         reviews: 'reviews(2)',
         offer: "I'll take a dog or a cat",
         adress: 'Sovetskay str.',
         phone: '123456789',
-        pict:null
+        pict:'https://ca.slack-edge.com/T6SG2QGG2-U01BXFJU9FU-86d7e3d412c8-512'
     },
     {
         name: 'Vadim',
@@ -202,27 +202,37 @@ export const dataSiters = [
         offer: "I'll take a dog or a cat",
         adress: 'Sovetskay str.',
         phone: '123456789',
-        pict:null
+        pict:'https://ca.slack-edge.com/T6SG2QGG2-U01EXEEMYBF-ae8feb74c62e-512'
     },
     {
-        name: 'Olga',
+        name: 'Tatiana',
         raitingPos: '0',
         raitingNeg: '1',
         reviews: 'reviews(2)',
         offer: "I will accept any pet",
         adress: 'Sovetskay str.',
         phone: '+123456789',
-        pict:'./components/no_avatar (1).png'
+        pict:'https://ca.slack-edge.com/T6SG2QGG2-U01DGHWHW8P-2f2b360006ec-512'
     },
     {
-        name: 'Irina',
+        name: 'Anastasia',
         raitingPos: '10',
         raitingNeg: '0',
         reviews: 'reviews(2)',
-        offer: "I'll take a dog or a cat",
+        offer: "I'll take a ferret",
         adress: 'Sovetskay str.',
         phone: '+123456789',
-        pict:'./components/no_avatar (1).png'
+        pict:'https://ca.slack-edge.com/T6SG2QGG2-U01FMBQ8VJN-a1d0e1185ff0-512'
+    },
+    {
+        name: 'Diana',
+        raitingPos: '10',
+        raitingNeg: '0',
+        reviews: 'reviews(2)',
+        offer: "I'll take a ferret",
+        adress: 'Sovetskay str.',
+        phone: '+123456789',
+        pict:'https://ca.slack-edge.com/T6SG2QGG2-U01EM4TS388-52ed700e3fb2-512'
     },
 
 ]
