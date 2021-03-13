@@ -34,7 +34,7 @@ const PetSitters = () => {
   console.log(Sitters)
 
   return (
-    <React.Fragment>
+    <div className='container-sitters'>
        {!loadList ?
        <React.Fragment>
          <Navbar
@@ -66,7 +66,7 @@ const PetSitters = () => {
             </Modal>
           <Footer/>
        </React.Fragment> : <div style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center'}}><CircularProgress size='200px' thickness='2'/></div>}
-    </React.Fragment>
+    </div>
 )
 }
 

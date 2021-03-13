@@ -211,7 +211,7 @@ export const dataSiters = [
         reviews: 'reviews(2)',
         offer: "I will accept any pet",
         adress: 'Sovetskay str.',
-        phone: '+123456789',
+        phone: '123456789',
         pict:'https://ca.slack-edge.com/T6SG2QGG2-U01DGHWHW8P-2f2b360006ec-512'
     },
     {
@@ -221,7 +221,7 @@ export const dataSiters = [
         reviews: 'reviews(2)',
         offer: "I'll take a ferret",
         adress: 'Sovetskay str.',
-        phone: '+123456789',
+        phone: '123456789',
         pict:'https://ca.slack-edge.com/T6SG2QGG2-U01FMBQ8VJN-a1d0e1185ff0-512'
     },
     {
@@ -231,7 +231,7 @@ export const dataSiters = [
         reviews: 'reviews(2)',
         offer: "I'll take a ferret",
         adress: 'Sovetskay str.',
-        phone: '+123456789',
+        phone: '123456789',
         pict:'https://ca.slack-edge.com/T6SG2QGG2-U01EM4TS388-52ed700e3fb2-512'
     },
 
