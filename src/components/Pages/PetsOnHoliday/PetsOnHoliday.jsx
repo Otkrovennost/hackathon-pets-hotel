@@ -185,8 +185,8 @@ const PetsOnHoliday = () => {
             aria-describedby="modal-description"
           >
           <PetForm
-            handleChange={handleClose}
             setLoadList={setLoadList}
+            handleClose={handleClose}
           />
           </Modal>
           <div className='pet-wrapper'>
