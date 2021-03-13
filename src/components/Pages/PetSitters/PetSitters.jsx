@@ -41,6 +41,7 @@ const PetSitters = () => {
          <Navbar
           isActiveLinkSitters={true}
          />
+         <h2 className="h2-sitters">Find your Ideal Pet-Companion!</h2>
           <div className="button-block">
           <Button style={{width:'200px', padding:'10px', background:' #2196f3', color:'#e3f2fd' , fontSize:'12px'}}
             variant="contained"
