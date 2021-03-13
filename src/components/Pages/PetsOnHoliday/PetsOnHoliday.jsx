@@ -62,9 +62,9 @@ const useStyles = makeStyles((theme) => ({
 const ALL_PETS = 'All';
 
 const PETS_LIST = [
-  '🐶 dog',
-  '🐈 cat',
-  '🐦 parrot',
+  'dog',
+  'cat',
+  'parrot',
   'other'
 ];
 
