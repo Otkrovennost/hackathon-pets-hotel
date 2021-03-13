@@ -10,7 +10,7 @@ const [comCount, setComCount] = useState(0)
 
 useEffect(()=>{
 const raw=localStorage.getItem('comment') || []
-setComment(JSON.parse(raw))
+setComment(JSON.parse(raw));
 const  comCountLocal=localStorage.getItem('comCount')
 setComCount(JSON.parse(comCountLocal))
 },[])

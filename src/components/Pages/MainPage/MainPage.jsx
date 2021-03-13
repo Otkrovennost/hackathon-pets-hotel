@@ -15,7 +15,9 @@ const MainPage = () => {
         </div>
 
         <div className='wrapper-content'>
-          <img src={Pict} />
+          <div><img src={Pict} /></div>
+
+          
 
           <div className='section'>
 

@@ -50,6 +50,16 @@ export const dataPets=[
         pet:'parrot',
     },
     {
+      name:'Sharlota',
+      img:'https://images.pexels.com/photos/991831/pexels-photo-991831.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+      dayStart :'01.04.2021',
+      dayEnd :'03.04.2021',
+      comment:'',
+      contact:'Irina',
+      phone:'+123456789',
+      pet:'cat',
+    },
+    {
         name:'Chack',
         img:'https://images.pexels.com/photos/97082/weimaraner-puppy-dog-snout-97082.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
         dayStart :'16.06.2021',
@@ -68,16 +78,6 @@ export const dataPets=[
         contact:'Anna',
         phone:'+123456789',
         pet:'parrot',
-    },
-    {
-        name:'Sharlota',
-        img:'https://images.pexels.com/photos/991831/pexels-photo-991831.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-        dayStart :'01.04.2021',
-        dayEnd :'03.04.2021',
-        comment:'',
-        contact:'Irina',
-        phone:'+123456789',
-        pet:'cat',
     },
 ]
 
