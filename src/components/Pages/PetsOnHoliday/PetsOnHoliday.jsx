@@ -34,8 +34,10 @@ const useStyles = makeStyles((theme) => ({
     minWidth: 275,
     position: 'absolute',
     top: 50,
-    left: 0,
+    left:  0,
     zIndex: 10,
+
+
   },
   filterMenuHide: {
     display: 'none'
@@ -47,7 +49,8 @@ const ALL_PETS = 'All';
 const PETS_LIST = [
   'dog',
   'cat',
-  'parrot'
+  'parrot',
+  'other'
 ];
 
 const getFilteredPets = (filtersList, arr) => {
@@ -94,7 +97,10 @@ const PetsOnHoliday = () => {
 
   return (
     <div className='pets-page'>
-      <Navbar 
+    <React.Fragment>
+
+
+      <Navbar
         isActiveLinkPets={true}
       />
       <div className='pets-main'>
@@ -102,7 +108,7 @@ const PetsOnHoliday = () => {
           {!loadList ?
             <React.Fragment>
               <div className="button-block">
-                <Button
+                <Button style={{width:'200px', padding:'10px', background:' #2196f3', color:'#e3f2fd' , fontSize:'12px'}}
                   variant="contained"
                   color="secondary"
                   onClick={handleOpen}
@@ -115,11 +121,11 @@ const PetsOnHoliday = () => {
                 <Box
                   style={{ position: 'relative' }}
                 >
-                  <Chip
+                  <Chip style={{marginLeft:'40px', background:'#ef9a9a', borderRadius:'4px' }}
                     color="primary"
                     size="medium"
                     label={
-                      <Box component="span">
+                      <Box component="span" >
                         Filter pets:
                       <span
                           style={{ marginLeft: '10px' }}
@@ -169,13 +175,13 @@ const PetsOnHoliday = () => {
                         <Button
                           size="small"
                           color="primary"
-                          style={{ fontWeight: 500, fontSize: '14px', lineHeight: '24px', color: '#2f80ed' }}
+                          style={{ fontWeight: 300, fontSize: '12px', lineHeight: '24px', color: '#2f80ed' }}
                           onClick={() => {
                             setSpecializationValue(new Set([ALL_PETS]));
                             setIsSpecializationMenuVisible(prev => !prev);
                           }}
                         >
-                          Сбросить
+                         Reset
                       </Button>
                       </CardActions>
                     </CardContent>
@@ -215,6 +221,7 @@ const PetsOnHoliday = () => {
         </div>
       </div>
       <Footer />
+      </React.Fragment>
     </div>
   )
 };
