@@ -108,7 +108,7 @@ const PetsOnHoliday = () => {
           {!loadList ?
             <React.Fragment>
               <div className="button-block">
-                <Button
+                <Button style={{width:'200px', padding:'10px', background:' #2196f3', color:'#e3f2fd' , fontSize:'12px'}}
                   variant="contained"
                   color="secondary"
                   onClick={handleOpen}
@@ -121,11 +121,11 @@ const PetsOnHoliday = () => {
                 <Box
                   style={{ position: 'relative' }}
                 >
-                  <Chip
+                  <Chip style={{marginLeft:'40px', background:'#ef9a9a', borderRadius:'4px' }}
                     color="primary"
                     size="medium"
                     label={
-                      <Box component="span">
+                      <Box component="span" >
                         Filter pets:
                       <span
                           style={{ marginLeft: '10px' }}

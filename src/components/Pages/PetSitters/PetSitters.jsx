@@ -42,7 +42,7 @@ const PetSitters = () => {
           isActiveLinkSitters={true}
          />
           <div className="button-block">
-          <Button style={{width:'100px', padding:'0', marginLeft:'70%', background:'#bbdefb', color:'#424242' , fontSize:'12px'}}
+          <Button style={{width:'200px', padding:'10px', background:' #2196f3', color:'#e3f2fd' , fontSize:'12px'}}
             variant="contained"
             color="#90caf9"
             onClick={handleOpen}
