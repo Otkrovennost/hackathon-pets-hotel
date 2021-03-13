@@ -5,11 +5,11 @@
   background-repeat: no-repeat, no-repeat;
   background-position: top right, bottom right;
   background-size: 100% auto;
-  padding-bottom: 40px;
+
 
   @include media-tablet{
     margin-bottom: 20px;
-  } 
+  }
 }
 .container-aboutSection {
     max-width: 1280px;
@@ -51,5 +51,5 @@
 
     @include media-tablet{
       margin-top: 20px;
-    }    
+    }
   }

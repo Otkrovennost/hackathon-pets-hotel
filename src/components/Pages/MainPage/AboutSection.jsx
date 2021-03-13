@@ -7,9 +7,9 @@ export default function AboutSection() {
         <div className='container-aboutSection'>
 <div className='content-container'>
 <h2>Возьму животное</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
-Сommodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>If you are going on vacation or on a business trip and do not know where to leave your pet, use our application to find a temporary home for your pet</p>
 
+<p>If you are lonely and love animals, but do not have the opportunity to constantly keep at home... If you want to take a pet, but have never lived with an animal then take advantage of our offer to take a pet for a while  the owner leaves</p>
 </div>
 <div className='imgDog'>
     <img src={dog} alt="dog"/>
