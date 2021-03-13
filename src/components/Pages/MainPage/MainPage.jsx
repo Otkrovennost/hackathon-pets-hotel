@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import "./MainPage.scss"
 import Pict from '../../../assets/image.png'
-import Logo from '../../../assets/Logo.png'
+import Logo from '../../../assets/Logo.svg'
 import AboutSection from './AboutSection';
 
 const MainPage = () => {
@@ -33,7 +33,7 @@ const MainPage = () => {
       </div>
 
 
-      <AboutSection/>
+      <AboutSection />
     </div >
   )
 }
