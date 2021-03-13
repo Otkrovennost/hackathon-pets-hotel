@@ -1,12 +1,15 @@
 import React from "react";
 import globalHook from "use-global-hook";
 
-import {dataPets} from '../data'
+import {dataPets, dataSiters} from '../data'
 
 let initialState = {
   Pets: {
     list: dataPets
   },
+  Sitters: {
+    list: dataSiters
+  }
 };
 
 export const cleanupPersistedStore = () => {
@@ -30,7 +33,6 @@ const actions = Object.keys(initialState).reduce((acc, key)=>{
     }
     return acc
 }, {});
-
 
 const useGlobal = globalHook(React, initialState, actions);
 const useGlobalState = () => {
