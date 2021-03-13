@@ -6,6 +6,7 @@ import useStore from '../../store/Store';
 import validator from "validator";
 
 import {
+  Button,
   Box,
   Grid,
   Paper,
@@ -13,12 +14,15 @@ import {
   Typography
 } from "@material-ui/core"; 
 
+import CloseIcon from '@material-ui/icons/Close';
+
 import AvatarCustom from '../AvatarCustom/AvatarCustom';
 import MainButtons from '../MainButtons/MainButtons';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     position: 'absolute',
+    display: 'flex',
     backgroundColor: theme.palette.background.paper,
     border: '2px solid #000',
     boxShadow: theme.shadows[2],
@@ -29,15 +33,23 @@ const useStyles = makeStyles((theme) => ({
     left: '50%', 
     transform: 'translate(-50%, -50%)',
     [theme.breakpoints.down("md")]: {
-      width: '80%',
+      width: '90%',
     },
   },
   textFieldName: {
     width: '100%',
     marginLeft: 0,
     [theme.breakpoints.up("sm")]: {
-      width: '60%', 
-      marginLeft: 'auto',
+      width: '35%', 
+      marginLeft: '3%',
+    },
+  },
+  textFieldKind: {
+    width: '100%',
+    marginLeft: 0,
+    [theme.breakpoints.up("sm")]: {
+      width: '35%', 
+      marginLeft: '3%',
     },
   },
   textFieldDate: {
@@ -61,7 +73,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-const PetForm = ({handleChange, setLoadList}) => {
+const PetForm = ({setLoadList, handleClose}) => {
   const classes = useStyles();
   let {Pets, updatePets} = useStore();
 
@@ -80,7 +92,8 @@ const PetForm = ({handleChange, setLoadList}) => {
     dayEnd: '2021-03-15',
     comment: '',
     contact: '',
-    phone: ''
+    phone: '',
+    pet: ''
   }
   const [pet, setPet] = useState(petInit);
 
@@ -92,6 +105,7 @@ const PetForm = ({handleChange, setLoadList}) => {
     comment: pet.comment !== '' ? true : false,
     contact: pet.contact !== '' ? true : false,
     phone: pet.phone !== '' ? true : false,
+    pet: pet.pet !== '' ? true : false,
   });
 
   const isNonEmpty = (n) => !validator.isEmpty(n);
@@ -102,7 +116,8 @@ const PetForm = ({handleChange, setLoadList}) => {
     dayEnd:isNonEmpty,
     contact: isNonEmpty,
     comment: isNonEmpty,
-    phone: isNonEmpty,
+    phone:   isNonEmpty,
+    pet: isNonEmpty,
   };
 
   const updateField = (key) => (input) => {
@@ -117,21 +132,22 @@ const PetForm = ({handleChange, setLoadList}) => {
   let setList = (list)=>{
     setTimeout(()=>{
       updatePets({
-        list: [...Pets.list, {
+        list: [{
           name: pet.name,
           img: fileState.selectedFile,
           dayStart: pet.dayStart,
           dayEnd: pet.dayEnd,
           comment: pet.comment,
           contact: pet.contact,
-          phone: pet.phone
-        }]
+          phone: pet.phone,
+          pet: pet.pet
+        }, ...Pets.list]
       })
     },1500);
   };
 
   let getList = () => new Promise(resolve => {
-    handleChange();
+    handleClose();
     setLoadList(true);
     setList(Pets.list);
     setTimeout(()=>{
@@ -166,6 +182,15 @@ const PetForm = ({handleChange, setLoadList}) => {
               error={!fieldsValid.name}
               helperText={fieldsValid.name ? '' : 'Please,add your pet name'}
               onChange={updateField("name")}
+              />
+              <TextField 
+              id="pet-kind"
+              label="Kind of animal"
+              value={pet.pet}
+              className={classes.textFieldKind}
+              error={!fieldsValid.pet}
+              helperText={fieldsValid.pet ? '' : 'Please,add kind of pet'}
+              onChange={updateField("pet")}
               />
           </Grid>
           <Grid container style={{display: 'flex', marginBottom: '15px'}}>
@@ -233,6 +258,7 @@ const PetForm = ({handleChange, setLoadList}) => {
               <TextField 
                 id="pet-contact-phone"
                 label="Owner phone"
+                placeholder="33755232211 "
                 value={pet.phone}
                 style={{width: '100%'}}
                 error={!fieldsValid.phone}
@@ -252,6 +278,13 @@ const PetForm = ({handleChange, setLoadList}) => {
           </Box>
         </Grid>
       </form>
+      <Button 
+        aria-label="Закрыть" 
+        onClick={handleClose}
+        style={{marginLeft: 'auto', alignSelf: 'flex-start'}}
+      >
+        <CloseIcon/>
+      </Button>
     </Paper>
   )
 };
