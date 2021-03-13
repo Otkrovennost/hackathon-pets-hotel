@@ -167,7 +167,7 @@ export const dataSiters = [
     {
         name: 'Nazar',
         raitingPos: '0',
-        raitingNeg: '1',
+        raitingNeg: '0',
         reviews: 'reviews(2)',
         offer: "I will accept any pet",
         adress: 'Sovetskay str.',
@@ -179,7 +179,7 @@ export const dataSiters = [
         raitingPos: '10',
         raitingNeg: '0',
         reviews: 'reviews(2)',
-        offer: "I'll take a dog or a cat",
+        offer: "I'll take a dog or a ret",
         adress: 'Sovetskay str.',
         phone: '123456789',
         pict:'https://ca.slack-edge.com/T6SG2QGG2-U01F6KBDZRD-590e9738fa3d-512'
@@ -233,6 +233,26 @@ export const dataSiters = [
         adress: 'Sovetskay str.',
         phone: '123456789',
         pict:'https://ca.slack-edge.com/T6SG2QGG2-U01EM4TS388-52ed700e3fb2-512'
+    },
+    {
+        name: 'Aliaksei',
+        raitingPos: '10',
+        raitingNeg: '0',
+        reviews: 'reviews(2)',
+        offer: "I'll take a ferret",
+        adress: 'Sovetskay str.',
+        phone: '123456789',
+        pict:'https://ca.slack-edge.com/T6SG2QGG2-U01FMHSLQ1H-def3040ee028-512'
+    },
+    {
+        name: 'Arseny',
+        raitingPos: '10',
+        raitingNeg: '0',
+        reviews: 'reviews(2)',
+        offer: "I'll take a hamster",
+        adress: 'Sovetskay str.',
+        phone: '123456789',
+        pict:'https://ca.slack-edge.com/T6SG2QGG2-U01G00UAZCH-95dc35b65339-512'
     },
 
 ]

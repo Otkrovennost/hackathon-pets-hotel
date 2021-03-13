@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import blue from '@material-ui/core/colors/blue';
 
 import {
   CircularProgress,
@@ -41,9 +42,9 @@ const PetSitters = () => {
           isActiveLinkSitters={true}
          />
           <div className="button-block">
-          <Button
+          <Button style={{width:'100px', padding:'0', marginLeft:'70%', background:'#bbdefb', color:'#424242' , fontSize:'12px'}}
             variant="contained"
-            color="secondary"
+            color="#90caf9"
             onClick={handleOpen}
             className="buttonAdd"
           >

@@ -97,6 +97,9 @@ const PetsOnHoliday = () => {
 
   return (
     <div className='pets-page'>
+    <React.Fragment>
+
+
       <Navbar
         isActiveLinkPets={true}
       />
@@ -218,6 +221,7 @@ const PetsOnHoliday = () => {
         </div>
       </div>
       <Footer />
+      </React.Fragment>
     </div>
   )
 };
