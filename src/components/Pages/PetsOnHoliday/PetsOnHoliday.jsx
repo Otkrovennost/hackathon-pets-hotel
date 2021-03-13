@@ -36,12 +36,19 @@ const useStyles = makeStyles((theme) => ({
     top: 50,
     left:  0,
     zIndex: 10,
-
-
   },
   filterMenuHide: {
     display: 'none'
   },
+  paginations: {
+    width: '50%',
+    margin: '0 auto',
+    display: 'flex',
+    justifyContent: 'center',
+    [theme.breakpoints.down("sm")]: {
+      width: '100%',
+    },
+  }
 }));
 
 const ALL_PETS = 'All';
@@ -205,6 +212,7 @@ const PetsOnHoliday = () => {
               <TablePagination
                 rowsPerPageOptions={[4, 8, 16, 32]}
                 component="div"
+                className={classes.paginations}
                 count={Pets.list.length}
                 rowsPerPage={rowsPerPage}
                 page={page}
@@ -214,7 +222,6 @@ const PetsOnHoliday = () => {
                 labelDisplayedRows={
                   ({ from, to, count }) => `Shown: ${from}-${to} from ${count !== -1 ? count : `more than ${to}`}`
                 }
-                style={{ width: '50%', margin: '0 auto', display: 'flex', justifyContent: 'center' }}
               />
             </React.Fragment> : <div style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><CircularProgress size='200px' thickness='2' /></div>
           }

@@ -32,8 +32,6 @@ const PetSitters = () => {
 
   const [loadList, setLoadList] = useState(false);
 
-  console.log(Sitters)
-
   return (
     <div className='container-sitters'>
        {!loadList ?

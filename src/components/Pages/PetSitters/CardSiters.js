@@ -4,9 +4,9 @@ import picture  from '../PetsOnHoliday/no_avatar (1).png'
 export default function CardSiters({ name, raitingPos, raitingNeg, reviews, offer, adress, phone,pict }) {
     let myRef=React.createRef()
 
-    const [count, setCount] = useState(Math.floor(Math.random() * (20 - 1)) + 1)
-const [comment, setComment] = useState([])
-const [comCount, setComCount] = useState(0)
+    const [count, setCount] = useState(0)
+    const [comment, setComment] = useState([])
+    const [comCount, setComCount] = useState(0)
 
 
 
