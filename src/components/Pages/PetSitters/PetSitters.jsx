@@ -47,7 +47,7 @@ const PetSitters = () => {
             variant="contained"
             color="#90caf9"
             onClick={handleOpen}
-            className="buttonAdd"
+            className="buttonAddSitters"
           >
             Put a card
           </Button>
