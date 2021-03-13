@@ -29,7 +29,7 @@ const actions = Object.keys(initialState).reduce((acc, key)=>{
         }
         store.setState({[key]: {...store.state[key], ...data}}, ()=>{
           localStorage.setItem('pets_store', JSON.stringify(store))
-        });
+        });  
     }
     return acc
 }, {});

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import blue from '@material-ui/core/colors/blue';
+import { makeStyles } from "@material-ui/core/styles";
 
 import {
   CircularProgress,
@@ -17,7 +18,21 @@ import SitterForm from '../../SitterForm/SitterForm';
 
 import "./PetSitters.scss";
 
+const useStyles = makeStyles((theme) => ({
+  text: {
+    width: '80%',
+    margin: '20px auto',
+    textAlign: 'center',
+  [theme.breakpoints.down("sm")]: {
+    width: '50%',
+  }
+}
+
+}));
+
+
 const PetSitters = () => {
+  const classes = useStyles();
 
   let {Sitters} = useStore();
   const [open, setOpen] = useState(false);
@@ -40,6 +55,9 @@ const PetSitters = () => {
           isActiveLinkSitters={true}
          />
          <h2 className="h2-sitters">Find a sitter your pet love!</h2>
+         <p className={classes.text}>
+            If you are lonely and love animals, but you haven't got opportunity to keep them at home ... or if you are going to have a pet, but don't have any experience use our offer to get such experience while the owner is away
+          </p>
           <div className="button-block">
           <Button style={{width:'200px', padding:'10px', background:' #2196f3', color:'#e3f2fd' , fontSize:'12px'}}
             variant="contained"
@@ -47,7 +65,7 @@ const PetSitters = () => {
             onClick={handleOpen}
             className="buttonAddSitters"
           >
-            Put a card
+            Become a pet sitter
           </Button>
           </div>
           <div className= 'pet-wrapper container'>

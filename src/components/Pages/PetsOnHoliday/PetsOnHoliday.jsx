@@ -48,15 +48,23 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       width: '100%',
     },
+  },
+  text: {
+    width: '80%',
+    margin: '20px auto',
+    textAlign: 'center',
+    [theme.breakpoints.down("sm")]: {
+      width: '50%',
+    }
   }
 }));
 
 const ALL_PETS = 'All';
 
 const PETS_LIST = [
-  'dog',
-  'cat',
-  'parrot',
+  '🐶 dog',
+  '🐈 cat',
+  '🐦 parrot',
   'other'
 ];
 
@@ -110,7 +118,11 @@ const PetsOnHoliday = () => {
       <Navbar
         isActiveLinkPets={true}
       />
-<h2 className="h2-sitters">Find your Ideal Pet-Companion!</h2>
+      <h2 className="h2-sitters">Find your Ideal Pet-Companion!</h2>
+      <p className={classes.text}> 
+        If you are going on vacation or on a business trip and looking for a pet-sitter?  Our platform makes finding a pet-sitter, easier than ever. 
+      </p>
+
         <div className='container'>
           {!loadList ?
             <React.Fragment>
@@ -121,7 +133,7 @@ const PetsOnHoliday = () => {
                   onClick={handleOpen}
                   className="buttonAdd"
                 >
-                  Put a card
+                  My pet needs a holet
             </Button>
               </div>
               <ClickAwayListener onClickAway={handleClickAway}>
