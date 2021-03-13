@@ -1,0 +1,18 @@
+@import "../scss/variables";
+
+@mixin media-tablet {
+    @media (max-width: $tablet) { @content; }
+}
+
+@mixin media-surface {
+    @media (max-width: $surface ) { @content; }
+}
+
+
+@mixin media-mobile {
+    @media (max-width: $mobile) { @content; }
+}
+
+@mixin media-mobilesmall {
+    @media (max-width: $mobile-small) { @content; }
+}
