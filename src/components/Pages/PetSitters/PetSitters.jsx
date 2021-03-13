@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import blue from '@material-ui/core/colors/blue';
 
 import {
   CircularProgress,
@@ -34,16 +35,17 @@ const PetSitters = () => {
   console.log(Sitters)
 
   return (
-    <React.Fragment>
+    <div className='container-sitters'>
        {!loadList ?
        <React.Fragment>
          <Navbar
           isActiveLinkSitters={true}
          />
+         <h2 className="h2-sitters">Find your Ideal Pet-Companion!</h2>
           <div className="button-block">
-          <Button
+          <Button style={{width:'200px', padding:'10px', background:' #2196f3', color:'#e3f2fd' , fontSize:'12px'}}
             variant="contained"
-            color="secondary"
+            color="#90caf9"
             onClick={handleOpen}
             className="buttonAdd"
           >
@@ -66,7 +68,7 @@ const PetSitters = () => {
             </Modal>
           <Footer/>
        </React.Fragment> : <div style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center'}}><CircularProgress size='200px' thickness='2'/></div>}
-    </React.Fragment>
+    </div>
 )
 }
 

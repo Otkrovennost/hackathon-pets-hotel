@@ -9,7 +9,7 @@ export default function AboutSection() {
 <h2>Возьму животное</h2>
 <p>If you are going on vacation or on a business trip and do not know where to leave your pet, use our application to find a temporary home for your pet</p>
 
-<p>If you are lonely and love animals, but do not have the opportunity to constantly keep at home... If you want to take a pet, but have never lived with an animal then take advantage of our offer to take a pet for a while  the owner leaves</p>
+<p>If you are lonely and love animals, but you haven't got opportunity to keep them at home ... or if you are going to have a pet, but don't have any experience use our offer to get such experience while the owner is away</p>
 </div>
 <div className='imgDog'>
     <img src={dog} alt="dog"/>

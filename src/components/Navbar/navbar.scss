@@ -2,6 +2,7 @@
 
 .navbar {
   background-color: aliceblue;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
 }
 
 .navbar-img {
@@ -9,7 +10,7 @@
   @include media-surface {
     width: 100px;
     height: auto;
-  } 
+  }
 }
 
 .wrapper-navbar{
@@ -21,7 +22,7 @@
     flex-wrap: wrap;
     align-items: center;
     margin-left: auto;
-  
+
 }
 
 .Link{
@@ -39,12 +40,12 @@
 
     @include media-tablet{
       margin-right: 50px;
-    } 
+    }
 
     @include media-surface{
       margin-right: 15px;
       font-size: 16px;
-    } 
+    }
 
     &:hover {
       opacity: 0.6;
