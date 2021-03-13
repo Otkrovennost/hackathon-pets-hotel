@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import picture from '../PetsOnHoliday/no_avatar (1).png'
+import picture  from '../PetsOnHoliday/no_avatar (1).png'
 
 export default function CardSiters({ name, raitingPos, raitingNeg, reviews, offer, adress, phone,pict }) {
     let myRef=React.createRef()
@@ -38,12 +38,11 @@ const handler =()=>{
         currentCount++
         setCount(currentCount)
     }
-    console.log(pict)
         return (
             <div className='sitters'>
              <p> <span onClick={handler}>  👍{count}</span><span> {' '}</span><span> 👎{raitingNeg} </span> <span className='commentsCount'>Comments ({comCount})</span></p>
               <div className='avatar-siters-container'>
-                <img src={picture} alt='pict' />
+                <img src={pict !== null ? pict : picture} alt='pict' />
                    <h2> {name} </h2>
 
               </div>
