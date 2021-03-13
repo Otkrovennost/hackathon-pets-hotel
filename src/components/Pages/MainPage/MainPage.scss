@@ -1,16 +1,72 @@
 .wrapper {
-    width: auto;
-    height: 100vh;
-    background:#E2576A;
+  width: auto;
+  height: auto;
+  background:#E2576A;
+}
+
+
+.wrapper-content {
+  display: flex;
+
+  margin:auto;
+  /* justify-content: space-between;   */
+   padding: 0;
+
+    }
+
+.logo {
+  position: fixed;
+  left:0;
+  width: 100px;
+  height: 10px;
+  font-size: large;
+  font-weight:bold;
+  padding-top: 10px
+}
+
+.wrapper img{
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  margin-top:10px;
+}
+
+.section {
+  flex-direction: column;
+  display: flex;
+  background:#E2576A;
+  font-family: 'Oregano';
+  justify-content: center;
   }
-  
-  
-  .wrapper-content {
-    display: flex;
-    margin:auto;
-    padding: 0;
+
+  .section h1 {
+    margin: 0em;
+     }
+
+  .section h4 {
+    margin: 0em;
+    color:  #FFFFFF;
+    font-family: auto;
+
   }
-  
+
+
+.button-general {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+
+  }
+
+.button-general button{
+  background-color: rgba(245, 245, 245, 0.70);
+  border-radius: 2px;
+  height: 30px;
+  width: 100px;
+  box-shadow: 4px 4px 7px 3px rgba(33, 107, 163, 0.20);
+  border-color: none;
+  border-style: none;
+}
   // .logo {
   //   display:flex;
   //   margin-left: 25px;;
@@ -21,48 +77,4 @@
   //   font-family: 'Oregano';
   //   padding-top: 15px
   // }
-  
-  .wrapper-content img{
-    overflow: hidden;
-   
-    width: 100%;
-    height: auto;
-    margin-top:10px;
-  }
-  
-  .section {
-    flex-direction: column;
-    display: flex;
-    background:#E2576A;
-    font-family: 'Oregano';
-    justify-content: center;
-    }
-  
-    .section h1 {
-      margin: 0em;
-       }
-  
-    .section h4 {
-      margin: 0em;
-      color:  #FFFFFF;
-      font-family: auto;
-      
-    }
-  
-  
-  .button-general {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 60px;
-  }
-  
-  .button-general button{
-    background-color: rgba(245, 245, 245, 0.70);
-    border-radius: 2px;
-    height: 30px;
-    width: 100px;
-    box-shadow: 4px 4px 7px 3px rgba(33, 107, 163, 0.20);
-    border-color: none;
-    border-style: none;
-  }
-  
+ 

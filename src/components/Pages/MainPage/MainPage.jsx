@@ -9,34 +9,32 @@ import AboutSection from './AboutSection';
 const MainPage = () => {
 
   return (
-    <div className='wrapper'>
-      <div className='wrapper-content'>
-        <div>
-          <img src={Logo} alt='logo' />
+    <div className='BothSections'>
+      <div className='wrapper'>
+        <div className='logo'>
+          <span>HPH</span>
         </div>
-        <div>
 
-          <div className='wrapper-content'>
-            <div><img src={Pict} /></div>
-
+        <div className='wrapper-content'>
+          <div><img src={Pict} /></div>
 
 
-            <div className='section'>
 
-              <h1>Home Pet Hottel</h1>
-              <h4>your pet will feel itself right at home</h4>
-              <div className='button-general'>
-                <Link to='/pets_on_holiday'><button >  pets  </button></Link>
-                <Link to='/pet_sitters'><button >  pet-sitter  </button></Link>
-              </div>
+          <div className='section'>
+
+            <h1>Home Pet Hottel</h1>
+            <h4>your pet will feel itself right at home</h4>
+            <div className='button-general'>
+              <Link to='/pets_on_holiday'><button >  pets  </button></Link>
+              <Link to='/pet_sitters'><button >  pet-sitter  </button></Link>
             </div>
           </div>
         </div>
+      </div>
 
 
-        <AboutSection />
-      </div >
-    </div>
+      <AboutSection />
+    </div >
   )
 }
 

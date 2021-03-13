@@ -21,6 +21,7 @@ import {
 import Modal from '@material-ui/core/Modal';
 import Button from '@material-ui/core/Button';
 
+import Navbar from '../../Navbar/navbar'
 import Footer from '../../Footer/Footer'
 import PetsCard from './PetCard';
 import PetForm from '../../PetForm/PetForm';
@@ -93,6 +94,7 @@ const PetsOnHoliday = () => {
 
   return (
     <div className='pets-page'>
+      <Navbar />
       <div className='pets-main'>
         <div className='container'>
           {!loadList ?

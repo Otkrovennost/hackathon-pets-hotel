@@ -1,3 +1,5 @@
+@import "../../scss/mixins";
+
 .wrapper-navbar{
 display: flex;
 
@@ -6,6 +8,7 @@ background-color: aliceblue;
 
 .wrapper-navbar ul{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-left: auto;
   
@@ -22,4 +25,9 @@ background-color: aliceblue;
     text-decoration: none;
 
 color: #5797E2;
+
+@include media-tablet{
+    margin-right: 50px;
+  } 
 }
+
