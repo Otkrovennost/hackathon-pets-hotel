@@ -34,8 +34,10 @@ const useStyles = makeStyles((theme) => ({
     minWidth: 275,
     position: 'absolute',
     top: 50,
-    left: 0,
+    left:  0,
     zIndex: 10,
+
+
   },
   filterMenuHide: {
     display: 'none'
@@ -47,7 +49,8 @@ const ALL_PETS = 'All';
 const PETS_LIST = [
   'dog',
   'cat',
-  'parrot'
+  'parrot',
+  'other'
 ];
 
 const getFilteredPets = (filtersList, arr) => {
@@ -167,7 +170,7 @@ const PetsOnHoliday = () => {
                         <Button
                           size="small"
                           color="primary"
-                          style={{ fontWeight: 500, fontSize: '14px', lineHeight: '24px', color: '#2f80ed' }}
+                          style={{ fontWeight: 300, fontSize: '12px', lineHeight: '24px', color: '#2f80ed' }}
                           onClick={() => {
                             setSpecializationValue(new Set([ALL_PETS]));
                             setIsSpecializationMenuVisible(prev => !prev);
