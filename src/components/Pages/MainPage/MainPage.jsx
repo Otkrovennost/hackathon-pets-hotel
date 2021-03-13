@@ -12,21 +12,21 @@ const MainPage = () => {
     <div className='BothSections'>
       <div className='wrapper'>
         <div className='logo'>
-          <span>HPH</span>
+          <img src={Logo} alt="logo"/>
         </div>
 
-        <div className='wrapper-content'>
-          <div><img src={Pict} /></div>
+        <div className='wrapper-content container'>
+          <div><img className="wrapper-content__img" src={Pict} alt="funny girl"/></div>
 
 
 
           <div className='section'>
 
             <h1>Home Pet Hottel</h1>
-            <h4>your pet will feel itself right at home</h4>
+            <p>your pet will feel itself right at home</p>
             <div className='button-general'>
-              <Link to='/pets_on_holiday'><button >  pets  </button></Link>
-              <Link to='/pet_sitters'><button >  pet-sitter  </button></Link>
+              <Link className="button" to='/pets_on_holiday'>pets</Link>
+              <Link className="button" to='/pet_sitters'>pet-sitter</Link>
             </div>
           </div>
         </div>
