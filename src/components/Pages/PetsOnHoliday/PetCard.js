@@ -8,7 +8,7 @@ export default function PetsCard(props) {
             <h2>{pet} {" "} {name} </h2>
             <img src={img} alt='pict' />
             <div className='petInfo'>
-                <p> from {' '}{dayStart} to {dayEnd} </p>
+                <p> from {' '}<b>{dayStart}</b> to <b>{dayEnd}</b> </p>
 
                 <p className="comment">{comment}</p>
                 <p>Contacts: <b>{contact}</b> </p>
