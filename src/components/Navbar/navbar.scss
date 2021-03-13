@@ -1,12 +1,11 @@
 @import "../../scss/mixins";
 
 .navbar {
-  padding: 15px 0;
   background-color: aliceblue;
 }
 
 .navbar-img {
-  width: 100%;
+  width: 150px;
   @include media-surface {
     width: 100px;
     height: auto;
