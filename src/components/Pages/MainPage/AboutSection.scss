@@ -1,13 +1,15 @@
 @import "../../../scss/mixins";
 .AboutSection{
-     background-image: url('./assets/Group\ 23.png');
-background-size:100% ;
-background-position-y:  top;
-background-position-x: 100%;
-background-repeat: no-repeat;
-background-size: 100% 100%;
-padding-bottom: 86px;
+  // background-image: url('./assets/Group\ 23.png');
+  background-image: url("./assets/bg_top.png"), url("./assets/bg_bottom.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top right, bottom right;
+  background-size: 100% auto;
+  padding-bottom: 40px;
 
+  @include media-tablet{
+    margin-bottom: 20px;
+  } 
 }
 .container-aboutSection {
     max-width: 1280px;
@@ -40,11 +42,14 @@ padding-bottom: 86px;
 
   }
   .content-container{
-margin-top: 130px;
-max-width: 500px;
-text-align: justify;
-h2{
-    margin-bottom: 20px;
-}
+    margin-top: 130px;
+    max-width: 500px;
+    text-align: justify;
+    h2{
+        margin-bottom: 20px;
+    }
 
+    @include media-tablet{
+      margin-top: 20px;
+    }    
   }
