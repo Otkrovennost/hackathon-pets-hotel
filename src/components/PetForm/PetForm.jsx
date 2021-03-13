@@ -54,6 +54,7 @@ const useStyles = makeStyles((theme) => ({
   },
   textFieldDate: {
     width: '100%',
+    fontSize: '16px',
     [theme.breakpoints.up("sm")]: {
       width: '40%', 
       fontSize: '18px',
@@ -61,6 +62,7 @@ const useStyles = makeStyles((theme) => ({
   },
   textFieldOwner: {
     width: '100%',
+    marginBottom: 0,
     padding: 0,
     [theme.breakpoints.up("sm")]: {
       width: '40%', 
@@ -70,6 +72,15 @@ const useStyles = makeStyles((theme) => ({
   resize:{
     fontSize: '20px'
   },
+  formTitle: {
+    width: '100%', 
+    fontSize: '30px', 
+    textAlign: 'center', 
+    color: 'rgb(136, 14, 58)', fontWeight: 600,
+    [theme.breakpoints.up("sm")]: {
+      fontSize: '20px',
+    },
+  }
 }));
 
 
@@ -163,11 +174,11 @@ const PetForm = ({setLoadList, handleClose}) => {
       <form id="employees-form" style={{width: '100%', paddingBottom: '50px'}}>
         <Grid container direction="column" spacing={1} alignItems="stretch">
           <Grid item style={{display: 'flex', marginBottom: '15px', padding: '0'}}>
-            <Typography variant="h6" style={{width: '100%', fontSize: '30px', textAlign: 'center', color: 'rgb(136, 14, 58)', marginBottom: 12, fontWeight: 600}}>
+            <Typography variant="h6" className="formTitle">
               Add notice
             </Typography>
           </Grid>
-          <Grid item style={{display: 'flex', flexWrap: 'wrap', alignItems: 'center', marginBottom: '15px', padding: '0'}}>
+          <Grid item style={{display: 'flex', flexWrap: 'wrap', alignItems: 'center', marginBottom: '5px', padding: '0'}}>
             <AvatarCustom
               fileState={fileState}
               setFileState={setFileState}
@@ -193,7 +204,7 @@ const PetForm = ({setLoadList, handleClose}) => {
               onChange={updateField("pet")}
               />
           </Grid>
-          <Grid container style={{display: 'flex', marginBottom: '15px'}}>
+          <Grid container style={{display: 'flex', marginBottom: '5px'}}>
             <TextField
               id="date-from"
               label="From"
@@ -229,12 +240,12 @@ const PetForm = ({setLoadList, handleClose}) => {
               }}
             />
           </Grid>
-          <Grid item style={{marginBottom: '15px', padding: '0'}}>
+          <Grid item style={{padding: '0'}}>
             <TextField
               style={{width: '100%'}}
               id="pet-comment"
               multiline
-              rows={2}
+              rows={1}
               label="Information about your pet"
               value={pet.comment}
               error={!fieldsValid.comment}

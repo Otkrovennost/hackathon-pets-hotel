@@ -17,7 +17,10 @@ const useStyles = makeStyles((theme) => ({
   },
   commonAvatarRoot: {
     position: 'relative',
-    marginBottom: '15px',
+    marginBottom: '5px',
+    [theme.breakpoints.up("sm")]: {
+      marginBottom: '15px'
+    },
   },
   commonAvatarLarge: {
     width: theme.spacing(13),
