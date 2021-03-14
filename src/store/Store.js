@@ -29,7 +29,14 @@ const actions = Object.keys(initialState).reduce((acc, key)=>{
         }
         store.setState({[key]: {...store.state[key], ...data}}, ()=>{
           localStorage.setItem('pets_store', JSON.stringify(store))
-        });  
+        });
+    }
+
+    acc['get' + key] = (store, data) => {
+      const dataFromLocal = JSON.parse(localStorage.getItem('pets_store'));
+      if(dataFromLocal) {
+        store.setState({...dataFromLocal.state})
+      }
     }
     return acc
 }, {});

@@ -18,7 +18,7 @@ const Footer = () => {
               <div className="footer__contacts-list">
                 <a className="footer__contacts-github" href="https://github.com/Dianakove32" target="_blank" rel="noreferrer">GitHub</a>
                 <span role="separator">|</span>
-                <a className="footer__contacts-linkedin" href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a className="footer__contacts-linkedin" href="https://www.linkedin.com/in/dziana-kavaleva-5347051aa/" target="_blank" rel="noreferrer">LinkedIn</a>
               </div>
             </li>
             <li className="footer__contacts-item">

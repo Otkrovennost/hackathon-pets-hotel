@@ -24,7 +24,7 @@ export const dataPets=[
         img:'https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
         dayStart :'2021-03-16',
         dayEnd :'2021-03-20',
-        comment:'affectionate kitten, litter box, does not scratch furniture',
+        comment:'affectionate kitten, does not scratch furniture',
         contact:'Anna',
         phone:'+123456789',
         pet:'cat',
@@ -74,7 +74,7 @@ export const dataPets=[
         img:'https://images.pexels.com/photos/2540644/pexels-photo-2540644.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
         dayStart :'2021-03-16',
         dayEnd :'2021-03-20',
-        comment:'affectionate kitten, litter box, does not scratch furniture',
+        comment:'vociferous',
         contact:'Anna',
         phone:'+123456789',
         pet:'parrot',
@@ -82,8 +82,8 @@ export const dataPets=[
     {
         name:'Tosha',
         img:'https://images.pexels.com/photos/1661179/pexels-photo-1661179.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-        dayStart :'19.03.2021',
-        dayEnd :'30.03.2021',
+        dayStart :'2021-03-16',
+        dayEnd :'2021-03-20',
         comment:'vociferous',
         contact:'Victor',
         phone:'+123456789',
@@ -92,8 +92,8 @@ export const dataPets=[
     {
       name:'Sharlota',
       img:'https://images.pexels.com/photos/991831/pexels-photo-991831.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-      dayStart :'01.04.2021',
-      dayEnd :'03.04.2021',
+      dayStart :'2021-03-16',
+      dayEnd :'2021-03-20',
       comment:'',
       contact:'Irina',
       phone:'+123456789',
@@ -102,8 +102,8 @@ export const dataPets=[
     {
         name:'Chack',
         img:'https://images.pexels.com/photos/97082/weimaraner-puppy-dog-snout-97082.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-        dayStart :'16.06.2021',
-        dayEnd :'17.06.2021',
+        dayStart :'2021-03-16',
+        dayEnd :'2021-03-20',
         comment:'labrador, affectionate, playful',
         contact:'Diana',
         phone:'+123456789',
@@ -112,9 +112,9 @@ export const dataPets=[
     {
         name:'Gosha',
         img:'https://images.pexels.com/photos/2540644/pexels-photo-2540644.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-        dayStart :'12.05.2021',
-        dayEnd :'12.06.21',
-        comment:'affectionate kitten, litter box, does not scratch furniture',
+        dayStart :'2021-03-16',
+        dayEnd :'2021-03-20',
+        comment:'vociferous',
         contact:'Anna',
         phone:'+123456789',
         pet:'parrot',
@@ -122,23 +122,13 @@ export const dataPets=[
     {
         name:'Chack',
         img:'https://images.pexels.com/photos/97082/weimaraner-puppy-dog-snout-97082.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-        dayStart :'16.06.2021',
-        dayEnd :'17.06.2021',
+        dayStart :'2021-03-16',
+        dayEnd :'2021-03-20',
         comment:'labrador, affectionate, playful',
         contact:'Diana',
         phone:'+123456789',
         pet:'dog',
-    },
-    {
-        name:'Gosha',
-        img:'https://images.pexels.com/photos/2540644/pexels-photo-2540644.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-        dayStart :'12.05.2021',
-        dayEnd :'12.06.21',
-        comment:'affectionate kitten, litter box, does not scratch furniture',
-        contact:'Anna',
-        phone:'+123456789',
-        pet:'parrot',
-    },
+    }
 ]
 
 
@@ -179,7 +169,7 @@ export const dataSiters = [
         raitingPos: '10',
         raitingNeg: '0',
         reviews: 'reviews(2)',
-        offer: "I'll take a dog or a ret",
+        offer: "I'll take a dog or a rat",
         adress: 'Sovetskay str.',
         phone: '123456789',
         pict:'https://ca.slack-edge.com/T6SG2QGG2-U01F6KBDZRD-590e9738fa3d-512'
@@ -207,7 +197,7 @@ export const dataSiters = [
     {
         name: 'Tatiana',
         raitingPos: '0',
-        raitingNeg: '1',
+        raitingNeg: '0',
         reviews: 'reviews(2)',
         offer: "I will accept any pet",
         adress: 'Sovetskay str.',

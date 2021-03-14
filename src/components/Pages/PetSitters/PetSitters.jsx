@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import blue from '@material-ui/core/colors/blue';
+import React, {useState, useEffect} from 'react';
+
 import { makeStyles } from "@material-ui/core/styles";
 
 import {
@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
 const PetSitters = () => {
   const classes = useStyles();
 
-  let {Sitters} = useStore();
+  let {Sitters, getSitters} = useStore();
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
@@ -46,6 +46,10 @@ const PetSitters = () => {
   };
 
   const [loadList, setLoadList] = useState(false);
+
+  useEffect(() => {
+    getSitters()
+  }, [])
 
   return (
     <div className='container-sitters'>

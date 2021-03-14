@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import useStore from '../../../store/Store.js';
 
@@ -81,7 +81,7 @@ const getFilteredPets = (filtersList, arr) => {
 const PetsOnHoliday = () => {
   const classes = useStyles();
 
-  let { Pets } = useStore();
+  let { Pets, getPets } = useStore();
 
   const [open, setOpen] = useState(false);
   const [loadList, setLoadList] = useState(false);
@@ -110,17 +110,21 @@ const PetsOnHoliday = () => {
     setIsSpecializationMenuVisible(false);
   };
 
+  useEffect(() => {
+    getPets()
+  }, [])
+
   return (
     <div className='pets-page'>
     <React.Fragment>
 
-<div className='pets-main'>
+    <div className='pets-main'>
       <Navbar
         isActiveLinkPets={true}
       />
-      <h2 className="h2-sitters">Find your Ideal Pet-Companion!</h2>
+      <h2 className="h2-sitters">Find your Ideal Pet Match</h2>
       <p className={classes.text}> 
-        If you are going on vacation or on a business trip and looking for a pet-sitter?  Our platform makes finding a pet-sitter, easier than ever. 
+        If you are going on vacation or a business trip and looking for a pet-sitter: our platform makes finding a pet-sitter, easier than ever. 
       </p>
 
         <div className='container'>
@@ -133,7 +137,7 @@ const PetsOnHoliday = () => {
                   onClick={handleOpen}
                   className="buttonAdd"
                 >
-                  My pet needs a holet
+                  My pet needs a hotel
             </Button>
               </div>
               <ClickAwayListener onClickAway={handleClickAway}>

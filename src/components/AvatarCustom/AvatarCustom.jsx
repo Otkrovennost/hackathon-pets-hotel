@@ -47,8 +47,8 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   commonAvatarCamera: {
-    width: theme.spacing(4),
-    height: theme.spacing(4),
+    width: theme.spacing(7),
+    height: theme.spacing(7),
     zIndex: 20,
     '&:hover': {
       color: '#fff',

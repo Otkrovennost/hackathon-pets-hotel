@@ -18,10 +18,10 @@ const MainPage = () => {
           <img className="wrapper-content__img" src={Girl} alt="funny girl"/>
           <div className='section'>
             <h1>Home Pet Hotel</h1>
-            <p>your pet will feel itself right at home</p>
+            <p>your pet will feel right at home</p>
             <div className='button-general'>
               <Link className="button" to='/pets_on_holiday'>pets</Link>
-              <Link className="button" to='/pet_sitters'>pet-sitter</Link>
+              <Link className="button" to='/pet_sitters'>pet-sitters</Link>
             </div>
           </div>
         </div>

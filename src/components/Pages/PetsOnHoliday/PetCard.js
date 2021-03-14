@@ -8,12 +8,13 @@ export default function PetsCard(props) {
             <h2>{pet} {" "} {name} </h2>
             <img src={img} alt='pict' />
             <div className='petInfo'>
+                <p style={{fontStyle:'italic'}}>My pet needs a hotel</p>
                 <p> from {' '}<b>{dayStart}</b> to <b>{dayEnd}</b> </p>
 
                 <p className="comment">{comment}</p>
                 <p>Contacts: <b>{contact}</b> </p>
                 <p>
-                    mobail: <b>{phone}</b>
+                    mobile: <b>{phone}</b>
                 </p>
             </div>
 

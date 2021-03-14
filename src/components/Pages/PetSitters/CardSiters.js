@@ -4,7 +4,7 @@ import picture  from '../PetsOnHoliday/no_avatar (1).png'
 export default function CardSiters({ name, raitingPos, raitingNeg, reviews, offer, adress, phone,pict }) {
     let myRef=React.createRef()
 
-    const [count, setCount] = useState(0)
+    const [count, setCount] = useState(raitingPos)
     const [comment, setComment] = useState([])
     const [comCount, setComCount] = useState(0)
 
@@ -53,8 +53,8 @@ const handler =()=>{
 
 
                     <p className="comment">{offer}</p>
-                    <p>adress: <b>{adress}</b></p>
-                    <p> mobail: <b>{phone}</b>
+                    <p>address: <b>{adress}</b></p>
+                    <p> mobile: <b>{phone}</b>
                     </p>
                 </div>
                 <input type='text' placeholder='leave a comment...' ref={myRef} /> <button onClick={addComment} >Send</button>
