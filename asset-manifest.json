@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/hackathon-pets-hotel/static/css/main.342ff499.chunk.css",
-    "main.js": "/hackathon-pets-hotel/static/js/main.e77fa6a7.chunk.js",
-    "main.js.map": "/hackathon-pets-hotel/static/js/main.e77fa6a7.chunk.js.map",
+    "main.js": "/hackathon-pets-hotel/static/js/main.e5df534a.chunk.js",
+    "main.js.map": "/hackathon-pets-hotel/static/js/main.e5df534a.chunk.js.map",
     "runtime-main.js": "/hackathon-pets-hotel/static/js/runtime-main.6ccbf6d5.js",
     "runtime-main.js.map": "/hackathon-pets-hotel/static/js/runtime-main.6ccbf6d5.js.map",
     "static/js/2.3d4fda07.chunk.js": "/hackathon-pets-hotel/static/js/2.3d4fda07.chunk.js",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.6ccbf6d5.js",
     "static/js/2.3d4fda07.chunk.js",
     "static/css/main.342ff499.chunk.css",
-    "static/js/main.e77fa6a7.chunk.js"
+    "static/js/main.e5df534a.chunk.js"
   ]
 }
